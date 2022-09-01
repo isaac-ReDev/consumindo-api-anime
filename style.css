@@ -1,21 +1,46 @@
 *{
     list-style: none;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    min-height: 100vh;
 }
 
 body{
     display: flex;
     align-items: center;            
     flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+
 
 }
+
+.header-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 30vh;
+    padding: 2  0px;
+    background-color:rgb(74, 10, 103);
+    color:rgb(184, 70, 237);
+}
+
 
 .search-a-anime{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80vw;
-    height:20vh;
-    background-color:rgb(149, 149, 223);
+    width: 90vw;
+    height:15vh;    
+    background-color:rgb(133, 9, 191);
 }
 
 .search-a-anime input{
@@ -23,31 +48,27 @@ body{
     height: 30px;
     border: none;
     background-color: transparent;
-    border-bottom: 3px solid black;
     outline: none;
-    background-color:rgb(114, 114, 218);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.395);
     text-align: center;
 }
 
 .search-a-anime select{
     text-align: center;
-    background-color:rgb(114, 114, 218);
+    background-color: rgba(255, 255, 255, 0.395);
     border: none;
     height: 40px;
     width: 90px;
     padding: 10px;
-    border-radius: 10px;
 }
 
 .search-a-anime button{
     text-align: center;
-    background-color:rgb(114, 114, 218);
+    background-color: rgba(255, 255, 255, 0.395);
     border: none;
     height: 40px;
     width: 90px;
     padding: 10px;
-    border-radius: 10px;
 }
 
 ul{
@@ -55,21 +76,60 @@ ul{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    width: 90vw;
+    width: 95vw;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(92, 50, 112);
+
 }
 .li-card-anime{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 5px;
     text-align: center;
-    width:250px;
-    height:420px;
-    background-color: rgb(146, 81, 6);
-    border: rgb(76, 49, 5) solid 1px;
+    width:240px;
+    height:440px;
+    background-color:rgb(124, 9, 177);
+    color: rgb(48, 5, 68);
+
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
+
+.li-card-anime:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+    background-color:rgb(93, 7, 133);
+    color: rgb(161, 89, 195);
+
+}
+
+
+.cont-about-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 0%;
+    font-size: 18px;
+    font-weight:bold;
+
+}
+
 img{
     align-self: center;
-    max-width:200px;
-    max-height:300px ;
+    max-width:95%;
+    height:320px ;
 }
+
+
