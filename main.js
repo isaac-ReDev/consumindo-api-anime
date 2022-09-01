@@ -1,19 +1,11 @@
 const inputAnimeName    = document.getElementById("input-search");
-const inputSelect  = document.getElementById("input-search-select");
+const inputSelect       = document.getElementById("input-search-select");
 const btnSearchAnime    = document.getElementById("btn-search");
 const ulAnime           = document.querySelector('[data-js="ul-anime"]') 
 const animeUrl          = `https://kitsu.io/api/edge/${'anime'}?filter[text]=${'adventure'}`
 
-//  testes
 
-// btnSearchAnime.addEventListener('click', () => {
-//     const valueSelect = inputSelect.options[inputSelect.selectedIndex].value;
-//     const animeUrlFilted = `https://kitsu.io/api/edge/${valueSelect}?filter[text]=${inputAnimeName}`    
-
-//     animeApp(animeUrlFilted)
-//     injectHtml()
-// })
-
+//* ao clicar em pesquisar ela chamar a funcao e faz uma pesquisa baseada na text digitado no input
 const returnNewValueForUlrFilted =  btnSearchAnime.addEventListener('click', () => {
     const valueSelect = inputSelect.options[inputSelect.selectedIndex].value;
     const animeUrlFilted = `https://kitsu.io/api/edge/${valueSelect}?filter[text]=${inputAnimeName.value}`
@@ -42,10 +34,6 @@ const animeApp = async (url) => {
     `
     }
 
-    console.log(animeData)
-    console.log(animeData.data[0].attributes.canonicalTitle)
-    console.log(animeData.data[0].attributes.popularityRank)
-    console.log(animeData.data[0].attributes.posterImage)
 }
 
 animeApp(animeUrl)
