@@ -13,7 +13,7 @@ const returnNewValueForUlrFilted =  btnSearchAnime.addEventListener('click', () 
     ulAnime.innerHTML = ''
     animeApp(animeUrlFilted)
     
-} )
+} ) 
 
 
 const animeApp = async (url) => {

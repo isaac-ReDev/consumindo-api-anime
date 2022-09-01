@@ -100,7 +100,7 @@ ul{
     transition: all 0.5s;
 }
 
-.li-card-anime:hover{
+.li-card-anime:hover{  
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
